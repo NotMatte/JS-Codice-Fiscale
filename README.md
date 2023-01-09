@@ -90,10 +90,15 @@ Il principale motivo del malfunzionamento potrebbe essere dvuto alla **porta dov
 //<porta> è un valore che sceglierai tu e che deve essere lungo 4 cifre
 ```
 
-* Salvare il package.json e recarsi nel file <code>script/script.js</code> alla riga 5 dove viene effettuata la chiamata all'API, per sostutuirla con:
+* Salvare il package.json e recarsi nel file <code>script/script.js</code> alla riga 7 dove viene effettuata la chiamata all'API, per sostutuirla con:
 ```js
 fetch("http://localhost:<porta>/comuni")
 //<porta> è il valore scelto precedentemente
+```
+
+* Esegui lo stesso passaggio anche per la riga 12:
+```js
+fetch("http://localhost:<porta>/paesi")
 ```
 
 
