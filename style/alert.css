@@ -1,0 +1,63 @@
+.swal-title{
+    font-family: 'Nunito';
+    text-align: center;
+    color: white;
+}
+
+.swal-text{
+    font-family: 'Alata';
+    text-align: center;
+    color: white;
+}
+
+.swal-modal{
+    backdrop-filter: saturate(180%) blur(10px);
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    box-shadow: rgba(59, 139, 214, 0.082) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+.swal-button {
+    background-color: #5ba3e223;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 15px;
+    width: 100%;
+
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    border: 1px solid #5ba3e24b;
+    border-radius: 14px;
+    box-shadow: rgba(59, 139, 214, 0.2) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+.swal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.swal-button:hover{
+    transform: scale(1.04);
+}
+
+
+.swal-footer{
+    /*metto in colonna*/
+    display: flex;
+    flex-direction: column;
+    /*metto uno spazio tra due elementi nel flex in colonna*/
+    gap: 5px;
+}
+.swal-button{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    text-align: center;
+}
+
+.swal-button:hover{
+    color: #000;
+}

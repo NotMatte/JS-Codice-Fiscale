@@ -1,0 +1,16 @@
+{
+  "name": "compito-codice-fiscale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./script/script.js",
+  "scripts": {
+    "start": "json-server --watch ./script/data/data.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "json-server": "^0.17.1"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/elementi.css">
+    <link rel="stylesheet" href="style/alert.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Codice fiscale • Made by Matteo Campo</title>
+</head>
+<body>
+    
+    <section class="content" id="pagina">
+
+        <!-- Box di info -->
+        <section class="box-info">
+            <h2>Tools</h2>
+            <h1>Codice Fiscale</h1>
+            <p class="subtitle">Trova il tuo codice fiscale</p>
+        </section>
+
+        <!-- Box dove stampare il risultato -->
+        <section class="box-risultato">
+            <div class="risultato-cf">
+                <p id="risultato">&nbsp</p>
+            </div>
+        </section>
+
+        <!-- Box dove inserire dati -->
+        <section class="box-dati">
+            <h1>Inserisci qui i dati:</h1>
+            <div class="box-dati-forms">
+                <div class="input">
+                    <label for="nome"> Nome </label>
+                    <input class="input-dentro" type="text" name="nome" id="nome" placeholder="Mario" required>
+                </div>
+                <div class="input">
+                    <label for="cognome"> Cognome </label>
+                    <input class="input-dentro" type="text" name="cognome" id="cognome" placeholder="Rossi" required>
+                </div>
+                <div class="input">
+                    <label for="sesso"> Sesso </label>
+                    <select class="input-dentro" name="sesso" id="sesso" required>
+                        <option value="M">Maschio</option>
+                        <option value="F">Femmina</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="data"> Data di nascita </label>
+                    <input class="input-dentro" type="date" name="data" id="data" required>
+                </div>
+                <div class="input">
+                    <label for="comune"> Comune di nascita </label>
+                    <input class="input-dentro" type="text" name="comune" id="comune" placeholder="Roma" required>
+                </div>
+                <div class="input">
+                    <label for="provincia"> Provincia di nascita </label>
+                    <input class="input-dentro" type="text" name="provincia" id="provincia" placeholder="RM" required>
+                </div>
+                <div class="input">
+                    <label for="stato"> Stato di nascita </label>
+                    <input class="input-dentro" type="text" name="stato" id="stato" placeholder="Italia" required>
+                </div>
+            </div>
+            <button id="calcola" onclick="calcola()">Calcola</button>
+            <button id="calcola" onclick="debug()">Debug</button>
+        </section>
+
+    </section>
+
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/comuni.json"></script>
+</body>
+</html>

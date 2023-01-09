@@ -1,0 +1,78 @@
+#calcola{
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+
+    background-color: #5ba3e223;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+
+    border: 1px solid #5ba3e24b;
+    border-radius: 14px;
+    box-shadow: rgba(59, 139, 214, 0.2) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+#calcola:hover{
+    transform: scale(1.04);
+    
+}
+
+/* Fccio il CSS per gli input di tipo test */
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+.input label{
+    margin-bottom: 6px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.input-dentro{
+    background-color: #afcce623;
+    color: white;
+    font-family: 'Alata';
+    font-size: 16px;
+    
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+
+    border: 1px solid #b3d2ec4b;
+    border-radius: 14px;
+    box-shadow: rgba(59, 139, 214, 0.082) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+.input-dentro-errore{
+    background-color: #e9828223;
+    color: white;
+    font-family: 'Alata';
+    font-size: 16px;
+    
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+
+    border: 1px solid #f71e384b;
+    border-radius: 14px;
+    box-shadow: rgba(59, 139, 214, 0.082) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Cambio il colore del testo nella tendina del tag select */
+select option{
+    color: black;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.466);
+}

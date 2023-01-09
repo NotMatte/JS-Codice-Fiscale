@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Black&family=League+Spartan:wght@700&family=Nunito:wght@900&display=swap');
+
+html{
+    background-color: #061629;
+    color: #ffffff;
+    font-family: 'Alata';
+}
+
+.content{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Box INFO */
+
+.box-info{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.box-info h1{
+    font-family: 'Nunito';
+    font-size: 3rem;
+}
+
+.box-info h2{
+    color: #5ba3e2;
+    margin-bottom: -3rem;
+}
+
+.subtitle{
+    font-family: 'Alata';
+    opacity: 0.7;
+    font-size: 16px;
+    margin-top: -55px;
+}
+
+/* Box RUSULTATO */
+
+.box-risultato{
+    background-color: rgba(255, 255, 255, 0.103);
+    width: 40%;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 30px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top: 2rem;
+    margin-bottom: 10px;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+.box-risultato:hover{
+    box-shadow: rgba(46, 146, 240, 0.4) 5px 5px, rgba(46, 137, 240, 0.3) 10px 10px, rgba(46, 130, 240, 0.2) 15px 15px, rgba(46, 114, 240, 0.1) 20px 20px, rgba(46, 124, 240, 0.05) 25px 25px;
+    transform: scale(1.05);
+    cursor: default;
+
+}
+
+#risultato{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Box DATI */
+
+.box-dati{
+    background-color: rgba(255, 255, 255, 0.103);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+.box-dati h1{
+    font-family: 'Nunito';
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box-dati-forms{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 17px;
+}
+
+/* Media query */
+
+@media screen and (max-width: 1700px) {
+    .content{
+        margin-left: 26rem;
+        margin-right: 26rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .content{
+        margin-left: 23rem;
+        margin-right: 23rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr 1fr;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .content{
+        margin-left: 17rem;
+        margin-right: 17rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr 1fr;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr 1fr;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .content{
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .content{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr;
+    }
+
+    .box-info{
+        margin-top: 1rem;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .content{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .box-risultato{
+        width: 100%;
+    }
+
+    .box-dati{
+        width: 100%;
+    }
+
+    .box-dati-forms{
+        grid-template-columns: 1fr;
+    }
+
+    .box-info{
+        margin-top: 1rem;
+    }
+    .swal-modal{
+        width: 100% !important;
+         border-radius: 0px !important;
+    }
+    .swal-footer{
+        /*metto in colonna*/
+        display: flex;
+        flex-direction: column;
+        /*metto uno spazio tra due elementi nel flex in colonna*/
+        gap: 5px;
+    }
+    .swal-button{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center;
+    }
+    
+}
