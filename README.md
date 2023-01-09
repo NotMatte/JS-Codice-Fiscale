@@ -25,6 +25,17 @@ npm start
 </div>
 
 <br>
+<br>
+
+## 🔗 Download dell'intero source code
+
+Clicca nel seguente link di reindirizzamento a google drive per ottenere la cartella intera del progetto
+dato che, scaricando tutti i file presenti nella repository non funzionerebbe per la mancanza della cartella
+con tutti i moduli di node.js denominata <code>node_modules</code>
+
+<a href="https://drive.google.com/file/d/1We_drGANbQvBx40_osblVsTuNP1Zhrtq/view?usp=sharing">Clicca per scaricare tutto il progetto »</a>
+
+<br>
 <div align="center">
   <img src="img/3.png" alt="Logo" width="70%">
 </div>
