@@ -75,6 +75,7 @@ function calcola(){
 
 }
 
+console.log("SUS Funzione: "+getNomeCognome("IAIA"))
 function getNomeCognome(str){
    var str = str.toUpperCase();
    const vocali = ['A', 'E', 'I', 'O', 'U'];
@@ -86,8 +87,9 @@ function getNomeCognome(str){
    for(let i = 0; i < str.length; i++){
       if(!vocali.includes(str[i]) && controlloLettera(str[i])) count++;
    }
+   console.log("DEBUG Count: "+count);
 
-   if(count < 3){
+   if(count < 3 && count != 0){
       let lung = count;
       let countAux = 0;
       for(let i = 0; i < str.length; i++){
@@ -109,7 +111,18 @@ function getNomeCognome(str){
       for(let i = 0; i < str.length; i++){
          if(!vocali.includes(str[i]) && newParola.length < 3 && controlloLettera(str[i])) newParola += str[i];
       }
+   }else if (count == 0){
+      for(let i = 0; i < 3; i++){
+         newParola += str[i];
+      }
    }
+
+   //
+   // IAIA -> 
+
+   // Controllo se la parola è 
+   if(newParola.length == 2){ newParola += "X"; };
+   if(newParola.length == 1){ newParola += "X" + "X"; };
 
    return newParola;
 }
