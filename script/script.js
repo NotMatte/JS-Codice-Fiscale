@@ -75,7 +75,6 @@ function calcola(){
 
 }
 
-console.log("SUS Funzione: "+getNomeCognome("IAIA"))
 function getNomeCognome(str){
    var str = str.toUpperCase();
    const vocali = ['A', 'E', 'I', 'O', 'U'];
@@ -87,14 +86,13 @@ function getNomeCognome(str){
    for(let i = 0; i < str.length; i++){
       if(!vocali.includes(str[i]) && controlloLettera(str[i])) count++;
    }
-   console.log("DEBUG Count: "+count);
 
    if(count < 3 && count != 0){
       let lung = count;
       let countAux = 0;
       for(let i = 0; i < str.length; i++){
          if(!vocali.includes(str[i]) && newParola.length < lung && controlloLettera(str[i])){
-            newParola += str[i];
+            newParola += controlloLetteraParola(str[i]);
             if(newParola.lenght == lung) countAux = i;
          }
       }
@@ -103,22 +101,19 @@ function getNomeCognome(str){
    else if(count >= 4){
       for(let i = 0; i < str.length; i++){
          if(!vocali.includes(str[i]) && newParola.length < 3 && controlloLettera(str[i])){
-            if(countCons != 1) newParola += str[i];
+            if(countCons != 1) newParola += controlloLetteraParola(str[i]);
             countCons++;
          }
       }
    }else if (count == 3){
       for(let i = 0; i < str.length; i++){
-         if(!vocali.includes(str[i]) && newParola.length < 3 && controlloLettera(str[i])) newParola += str[i];
+         if(!vocali.includes(str[i]) && newParola.length < 3 && controlloLettera(str[i])) newParola += controlloLetteraParola(str[i]);
       }
    }else if (count == 0){
       for(let i = 0; i < 3; i++){
-         newParola += str[i];
+         newParola += controlloLetteraParola(str[i]);
       }
    }
-
-   //
-   // IAIA -> 
 
    // Controllo se la parola è 
    if(newParola.length == 2){ newParola += "X"; };
@@ -267,4 +262,57 @@ function controlloApi(){
        });
       return false;
    }
+}
+
+function controlloLetteraParola(str){
+   //Â=A, Ä=AE, Æ=AE, Ç=C, Ç=C, Ê=E, Ë=E, Î=I, Ï=I, Ô=O, Ö=OE, Œ=OE, Û=U, Ü=UE, Š=S, Ž=Z, ß=SS
+   if(str == "Â"){ return "A"; }
+   if(str == "Ä"){ return "AE"; }
+   if(str == "Æ"){ return "AE"; }
+   if(str == "Ç"){ return "C"; }
+   if(str == "Ê"){ return "E"; }
+   if(str == "Ë"){ return "E"; }
+   if(str == "Î"){ return "I"; }
+   if(str == "Ï"){ return "I"; }
+   if(str == "Ô"){ return "O"; }
+   if(str == "Ö"){ return "OE"; }
+   if(str == "Œ"){ return "OE"; }
+   if(str == "Û"){ return "U"; }
+   if(str == "Ü"){ return "UE"; }
+   if(str == "Š"){ return "S"; }
+   if(str == "Ž"){ return "Z"; }
+   if(str == "ß"){ return "SS"; }
+   if(str == "Ā"){ return "A"; }
+   if(str == "Ă"){ return "A"; }
+   if(str == "Ą"){ return "A"; }
+   if(str == "Ć"){ return "C"; }
+   if(str == "Ĉ"){ return "C"; }
+   if(str == "Ċ"){ return "C"; }
+   if(str == "Č"){ return "C"; }
+   if(str == "Ď"){ return "D"; }
+   if(str == "Đ"){ return "D"; }
+   if(str == "Ē"){ return "E"; }
+   if(str == "Ĕ"){ return "E"; }
+   if(str == "Ė"){ return "E"; }
+   if(str == "Ę"){ return "E"; }
+   if(str == "Ě"){ return "E"; }
+   if(str == "Ĝ"){ return "G"; }
+   if(str == "Ğ"){ return "G"; }
+   if(str == "Ġ"){ return "G"; }
+   if(str == "Ģ"){ return "G"; }
+   if(str == "Ĥ"){ return "H"; }
+   if(str == "Ħ"){ return "H"; }
+   if(str == "Ĩ"){ return "I"; }
+   if(str == "Ī"){ return "I"; }
+   if(str == "Ĭ"){ return "I"; }
+   if(str == "Į"){ return "I"; }
+   if(str == "İ"){ return "I"; }
+   if(str == "Ĵ"){ return "J"; }
+   if(str == "Ķ"){ return "K"; }
+   if(str == "Ĺ"){ return "L"; }
+   if(str == "Ļ"){ return "L"; }
+   if(str == "Ľ"){ return "L"; }
+   if(str == "Ŀ"){ return "L"; }
+   if(str == "Ł"){ return "L"; }
+   return str;
 }
