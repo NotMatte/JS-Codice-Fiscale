@@ -33,7 +33,7 @@ Clicca nel seguente link di reindirizzamento a google drive per ottenere la cart
 dato che, scaricando tutti i file presenti nella repository non funzionerebbe per la mancanza della cartella
 con tutti i moduli di node.js denominata <code>node_modules</code>
 
-<a href="https://drive.google.com/file/d/1We_drGANbQvBx40_osblVsTuNP1Zhrtq/view?usp=sharing">Clicca per scaricare tutto il progetto »</a>
+<a href="https://drive.google.com/file/d/1Uq71kl1QFRYrApBHCSiUZrvUti7aVcE3/view?usp=sharing">Clicca per scaricare tutto il progetto »</a>
 
 <br>
 <div align="center">
